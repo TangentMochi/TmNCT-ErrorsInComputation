@@ -11,6 +11,12 @@ typedef union {
   long p;
 } DL;
 
+// Windows
+if (sizeof(double) != sizeof(long)) {
+  printf("Size of double doesn't match size of long\n");
+  exit(-1);
+}
+
 int main(void) {
 
   // 共用体の型の変数を初期化し，0とする
