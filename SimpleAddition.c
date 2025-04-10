@@ -6,6 +6,7 @@
 
 // 共用体，構造体と同じように使えるがメモリ領域は共有する
 // long, double ともに 8byte であることを仮定
+// Windows の gcc だと sizeof(long) != sizeof(double) なので注意
 typedef union {
   double d;
   long p;
